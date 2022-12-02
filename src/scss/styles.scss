@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+$custom-breakpoints: (
+  mobile: 360px,
+  tablet: 768px,
+  desktop: 1440px
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-breakpoints);
+
+$body-bg: #121212;
+
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/helpers';
+@import '~bootstrap/scss/utilities/api';

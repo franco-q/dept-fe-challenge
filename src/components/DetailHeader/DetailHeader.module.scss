@@ -1,0 +1,92 @@
+.root {
+  height: 309px;
+  position: relative;
+}
+
+.figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  margin: 0;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+%roundedBtn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.11),
+      rgba(255, 255, 255, 0.11)
+    ),
+    #272727;
+  border: 0;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.backLink {
+  @extend %roundedBtn;
+  left: 25px;
+  top: 15px;
+}
+
+.favBtn {
+  @extend %roundedBtn;
+  top: 15px;
+  right: 25px;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    0.25deg,
+    rgba(0, 0, 0, 0.7) 20.99%,
+    rgba(255, 255, 255, 0) 96.78%
+  );
+}
+
+.date {
+  font-family: 'D-DIN';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.rocket {
+  font-family: 'D-DIN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.caption {
+  font-family: 'D-DIN';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.87);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

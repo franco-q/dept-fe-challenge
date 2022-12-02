@@ -1,0 +1,24 @@
+.root {
+  background: linear-gradient(180deg, #121212 64.11%, #1e1e1e 100%);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+    0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 131px;
+  height: 16px;
+  display: block;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: 'D-DIN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.87);
+}

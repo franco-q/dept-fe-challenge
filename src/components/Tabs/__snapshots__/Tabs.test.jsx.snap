@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs should render 1`] = `
+<DocumentFragment>
+  <nav>
+    <a
+      class=""
+      href="#"
+    >
+      All
+    </a>
+    <a
+      class=""
+      href="#"
+    >
+      Favourites
+    </a>
+  </nav>
+</DocumentFragment>
+`;

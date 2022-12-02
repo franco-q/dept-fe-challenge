@@ -1,0 +1,57 @@
+@import '@/scss/styles.scss';
+
+.root {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.12),
+      rgba(255, 255, 255, 0.12)
+    ),
+    #121212;
+  border-radius: 8px;
+  height: 35px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.searchSvg {
+  display: block;
+}
+
+.form,
+.input {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  background-color: #00000000;
+  border: none;
+  height: 17px;
+  margin-left: 8px;
+  padding: 0;
+  color: #fff;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.clearBtn {
+  display: flex;
+  background-color: #00000000;
+  border: 0;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+@include media-breakpoint-up(tablet) {
+  .root {
+    max-width: 400px;
+  }
+}

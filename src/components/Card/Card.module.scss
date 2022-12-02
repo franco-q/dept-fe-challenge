@@ -1,0 +1,115 @@
+@import '@/scss/styles.scss';
+
+.root {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    #121212;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: flex;
+  font-family: 'D-DIN';
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-decoration: none;
+  &,
+  &:active,
+  &:hover {
+    color: #ffffffde;
+  }
+}
+
+.figure {
+  height: 109px;
+  width: 121px;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.content {
+  width: calc(100% - 121px);
+  padding-left: 12px;
+  padding-top: 11px;
+  padding-right: 9px;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 18px;
+  height: 37px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.37);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  background-color: #00000000;
+  border: none;
+}
+
+@include media-breakpoint-up(tablet) {
+  .root {
+    flex-direction: column;
+  }
+  .figure {
+    height: 158px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .content {
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .date {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
